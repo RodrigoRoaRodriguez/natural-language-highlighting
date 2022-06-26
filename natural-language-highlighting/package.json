@@ -1,0 +1,25 @@
+{
+    "name": "natural-language-highlighting",
+    "displayName": "natural-language-highlighting",
+    "description": "Syntax highlighting is awesome, so why not highlight ordinary language?",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "english",
+            "aliases": ["English", "english"],
+            "extensions": [".en.nat",".nat",".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "english",
+            "scopeName": "source.natural",
+            "path": "./syntaxes/english.tmLanguage.json"
+        }]
+    }
+}
